@@ -520,7 +520,7 @@ angular.module('starter',
 
     $stateProvider
         .state('intro', {
-            cache: false,
+            cache: true,
             url: '/',
             templateUrl: 'templates/intro-tour-new.html',
             controller: 'IntroCtrl',
@@ -533,7 +533,7 @@ angular.module('starter',
             resolve : config_resolver
         })
         .state('app.welcome', {
-            cache: false,
+            cache: true,
             url: "/welcome",
             views: {
                 'menuContent': {
@@ -609,7 +609,7 @@ angular.module('starter',
         })
         .state('app.track', {
             url: "/track",
-            cache: false,
+            cache: true,
             views: {
                 'menuContent': {
                     templateUrl: "templates/track-primary-outcome-variable.html",
@@ -772,7 +772,7 @@ angular.module('starter',
         })
         .state('app.measurementAdd', {
             url: "/measurement-add",
-            cache: false,
+            cache: true,
             params: {
                 trackingReminder: null,
                 reminderNotification: null,
@@ -791,7 +791,7 @@ angular.module('starter',
         })
         .state('app.measurementAddVariable', {
             url: "/measurement-add-variable-name/:variableName",
-            cache: false,
+            cache: true,
             params: {
                 trackingReminder: null,
                 reminderNotification: null,
@@ -809,7 +809,7 @@ angular.module('starter',
         })
         .state('app.variableSettings', {
             url: "/variable-settings/:variableName",
-            cache: false,
+            cache: true,
             params: {
                 reminder : null,
                 fromState : null,
@@ -827,7 +827,7 @@ angular.module('starter',
         })
         .state('app.import', {
             url: "/import",
-            cache: false,
+            cache: true,
             views: {
                 'menuContent': {
                     templateUrl: "templates/import-data.html",
@@ -837,7 +837,7 @@ angular.module('starter',
         })
         .state('app.importNative', {
             url: "/import-native",
-            cache: false,
+            cache: true,
             params: {
                 native: true
             },
@@ -850,7 +850,7 @@ angular.module('starter',
         })
         .state('app.chartSearch', {
             url: "/chart-search",
-            cache: false,
+            cache: true,
             params: {
                 variableCategoryName: null,
                 fromState: null,
@@ -875,7 +875,7 @@ angular.module('starter',
         })
         .state('app.chartSearchCategory', {
             url: "/chart-search-category/:variableCategoryName",
-            cache: false,
+            cache: true,
             params: {
                 variableCategoryName: null,
                 fromState: null,
@@ -900,7 +900,7 @@ angular.module('starter',
         })
         .state('app.predictorSearch', {
             url: "/predictor-search",
-            cache: false,
+            cache: true,
             params: {
                 title: "Outcomes", // Gets cut off on iPod if any longer
                 variableSearchPlaceholderText: "Search for an outcome...",
@@ -933,7 +933,7 @@ angular.module('starter',
         })
         .state('app.tageeSearch', {
             url: "/tagee-search",
-            cache: false,
+            cache: true,
             params: {
                 userTagVariableObject: null,
                 title: "Select Tagee", // Gets cut off on iPod if any longer
@@ -963,7 +963,7 @@ angular.module('starter',
         })
         .state('app.tagSearch', {
             url: "/tag-search",
-            cache: false,
+            cache: true,
             params: {
                 userTaggedVariableObject: null,
                 title: "Tags", // Gets cut off on iPod if any longer
@@ -993,7 +993,7 @@ angular.module('starter',
         })
         .state('app.tagAdd', {
             url: "/tag-add",
-            cache: false,
+            cache: true,
             params: {
                 tagConversionFactor: null,
                 fromState : null,
@@ -1017,7 +1017,7 @@ angular.module('starter',
         })
         .state('app.outcomeSearch', {
             url: "/outcome-search",
-            cache: false,
+            cache: true,
             params: {
                 title: "Predictors", // Gets cut off on iPod if any longer
                 variableSearchPlaceholderText: "Search for an predictor...",
@@ -1049,7 +1049,7 @@ angular.module('starter',
         })
         .state('app.searchVariablesWithUserPredictors', {
             url: "/search-variables-with-user-predictors",
-            cache: false,
+            cache: true,
             params: {
                 variableCategoryName: null,
                 nextState: 'app.predictors',
@@ -1071,7 +1071,7 @@ angular.module('starter',
         })
         .state('app.searchVariablesWithCommonPredictors', {
             url: "/search-variables-with-common-predictors",
-            cache: false,
+            cache: true,
             params: {
                 variableCategoryName: null,
                 nextState: 'app.predictors',
@@ -1093,7 +1093,7 @@ angular.module('starter',
         })
         .state('app.charts', {
             url: "/charts/:variableName",
-            cache: false,
+            cache: true,
             params: {
                 trackingReminder : null,
                 variableName : null,
@@ -1337,7 +1337,7 @@ angular.module('starter',
             }
         })
         .state('app.studyJoin', {
-            cache: false,
+            cache: true,
             url: "/study-join",
             params: {
                 correlationObject: null
@@ -1350,7 +1350,7 @@ angular.module('starter',
             }
         })
         .state('app.studyCreation', {
-            cache: false,
+            cache: true,
             url: "/study-creation",
             params: {
                 correlationObject: null
@@ -1466,7 +1466,7 @@ angular.module('starter',
         })
         .state('app.remindersInbox', {
             url: "/reminders-inbox",
-            cache: false,
+            cache: true,
             params: {
                 title: 'Reminder Inbox',
                 reminderFrequency: null,
@@ -1486,7 +1486,7 @@ angular.module('starter',
         })
         .state('app.remindersInboxCompact', {
             url: "/reminders-inbox-compact",
-            cache: false,
+            cache: true,
             params: {
                 title: 'Reminder Inbox',
                 reminderFrequency: null,
@@ -1507,7 +1507,7 @@ angular.module('starter',
         })
         .state('app.favorites', {
             url: "/favorites",
-            cache: false,
+            cache: true,
             params: {
                 reminderFrequency: 0,
                 unit: null,
@@ -1525,7 +1525,7 @@ angular.module('starter',
         })
         .state('app.favoritesCategory', {
             url: "/favorites-category/:variableCategoryName",
-            cache: false,
+            cache: true,
             params: {
                 variableCategoryName: null
             },
@@ -1630,7 +1630,7 @@ angular.module('starter',
             }
         })
         .state('app.remindersManage', {
-            cache: false,
+            cache: true,
             url: "/reminders-manage/:variableCategoryName",
             views: {
                 'menuContent': {
@@ -1640,7 +1640,7 @@ angular.module('starter',
             }
         })
         .state('app.remindersList', {
-            cache: false,
+            cache: true,
             url: "/reminders-list/:variableCategoryName",
             views: {
                 'menuContent': {
@@ -1651,7 +1651,7 @@ angular.module('starter',
         })
         .state('app.reminderAdd', {
             url: "/reminder-add",
-            cache: false,
+            cache: true,
             params: {
                 variableCategoryName : null,
                 reminder : null,
@@ -1706,7 +1706,7 @@ angular.module('starter',
         })
         .state('app.favoriteAdd', {
             url: "/favorite-add",
-            cache: false,
+            cache: true,
             params: {
                 reminder: null,
                 variableCategoryName : null,

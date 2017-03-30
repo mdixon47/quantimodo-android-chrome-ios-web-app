@@ -20,7 +20,8 @@
       https://widget.intercom.io/
       https://js.intercomcdn.com
       'unsafe-inline' 'unsafe-eval'"> -->
-    <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">
+    <!--  Allows UserVoice script to work: <meta http-equiv="Content-Security-Policy" content="default-src *; script-src 'self' 'unsafe-inline' 'unsafe-eval' *; style-src  'self' 'unsafe-inline' *">-->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com https://*.quantimo.do https://www.google-analytics.com https://notify.bugsnag.com https://www.gravatar.com https://stats.g.doubleclick.net https://widget.uservoice.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
 
     <title></title>
 

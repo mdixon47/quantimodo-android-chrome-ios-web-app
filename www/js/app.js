@@ -26,7 +26,8 @@ angular.module('starter',
         'ngMaterial',
         'ngMessages',
         'angular-cache',
-        'angular-d3-word-cloud'
+        'angular-d3-word-cloud',
+        'uservoice-trigger'
     ]
 )
 
@@ -425,9 +426,10 @@ angular.module('starter',
     }
 })
 
-.config(function($stateProvider, $urlRouterProvider, $compileProvider, ionicTimePickerProvider,
+.config(function($stateProvider, $urlRouterProvider, $compileProvider, ionicTimePickerProvider, $userVoiceProvider,
                  ionicDatePickerProvider, $ionicConfigProvider, AnalyticsProvider) {
 
+    $userVoiceProvider.defaults.key = 'zFZhM9zeDpFAXUFUyPKSQ';
     var analyticsOptions = {tracker: 'UA-39222734-25', trackEvent: true};
     if(ionic.Platform.isAndroid()){
         var clientId = window.localStorage.GA_LOCAL_STORAGE_KEY;

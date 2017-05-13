@@ -16,6 +16,14 @@
         "webApp": "https://medimodo.quantimo.do"
     },
     "facebookAppId": 225078261031461,
+    "firebaseConfig": {
+        "apiKey": "AIzaSyB6HbTX72rTH4BG3CPFWFtp15y_WL-W_WI",
+        "authDomain": "medimodo-b90ee.firebaseapp.com",
+        "databaseURL": "https://medimodo-b90ee.firebaseio.com",
+        "projectId": "medimodo-b90ee",
+        "storageBucket": "medimodo-b90ee.appspot.com",
+        "messagingSenderId": "816392911644"
+    },
     "floatingActionButtonColor": null,
     "googleAnalyticsTrackingIds": {
         "laravel": "UA-98995949-4",
